@@ -5,8 +5,24 @@
  */
 
 const NodeHelper = require('node_helper');
-const socket = require('socket.io').socket;
-const express = require('express').express;
+
+var io = require('socket.io');
+var express = require('express');
+var app = express.createServer()
+var io = io.listen(app);
+
+app.listen(8888);
+
+io.sockets.on('connection', function (socket) {
+	socket.emit('news', { hello: 'world' });
+	socket.on('my other event', function (data) {
+		console.log(data);
+	});
+  
+	socket.on('disconnect', function () {
+		console.log('user disconnected');
+	});
+});
 
 module.exports = NodeHelper.create({
  	start: function () {
