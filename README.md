@@ -1,0 +1,2 @@
+# MotionSensor
+This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It can monitor a [PIR motion] sensor and put your mirror to sleep if nobody uses it by turning off HDMI output or by turning off the mirror via a relay.

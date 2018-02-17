@@ -1,0 +1,24 @@
+{
+  "name": "MotionSensor",
+  "version": "0.0.1",
+  "description": "Motion Sensor module for the Magic Mirror.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandridz/MotionSensor.git"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "motion sensor"
+  ],
+  "author": "yen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mandridz/MotionSensor/issues"
+  },
+  "homepage": "https://github.com/mandridz/MotionSensor#readme",
+  "dependencies": {
+    "socket.io": "latest",
+    "express": "latest"
+  }
+}
